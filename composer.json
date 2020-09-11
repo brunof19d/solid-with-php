@@ -1,5 +1,5 @@
 {
-  "name": "cviniciussdias/alura-solid",
+  "name": "brunof19d/solid-php",
   "autoload": {
     "psr-4": {
       "Alura\\Solid\\": "src/"

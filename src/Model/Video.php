@@ -2,20 +2,20 @@
 
 namespace Alura\Solid\Model;
 
-class Video
+use DateInterval;
+
+class Video implements Assistivel
 {
-    /** @var bool */
-    protected $assistido = false;
-    /** @var string */
-    protected $nome;
-    /** @var \DateInterval */
-    protected $duracao;
+
+    protected bool $assistido = false;
+    protected string $nome;
+    protected DateInterval $duracao;
 
     public function __construct(string $nome)
     {
         $this->nome = $nome;
         $this->assistido = false;
-        $this->duracao = \DateInterval::createFromDateString('0');
+        $this->duracao = DateInterval::createFromDateString('0');
     }
 
     public function assistir(): void
